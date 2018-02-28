@@ -1,7 +1,7 @@
 var isolatedApp = angular.module('isolatedApp',[]);
     
     	isolatedApp.controller('isolatedController',function($scope){
-            $scope.msg = "TestAshish";
+            $scope.msg = "Soory sir...";
             $scope.product1 = { Name: 'TV', Brand: 'Sony', Price: 5000 };
             $scope.customer = {
             	name: 'David',
