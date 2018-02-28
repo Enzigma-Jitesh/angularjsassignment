@@ -1,8 +1,12 @@
 var isolatedApp = angular.module('isolatedApp',[]);
     
     	isolatedApp.controller('isolatedController',function($scope){
+<<<<<<< HEAD
 	    $scope.msg1 = "Trying GitHub";
             $scope.msg = "Test Msg";
+=======
+            $scope.msg = "TestAshish";
+>>>>>>> 2218bb937d6b4f9ccdc30f1dafa452e2b4c84486
             $scope.product1 = { Name: 'TV', Brand: 'Sony', Price: 5000 };
             $scope.customer = {
             	name: 'David',
