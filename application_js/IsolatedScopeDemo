@@ -1,0 +1,30 @@
+var isolatedApp = angular.module('isolatedApp',[]);
+    
+    	isolatedApp.controller('isolatedController',function($scope){
+             $scope.product1 = { Name: 'TV', Brand: 'Sony', Price: 5000 };
+            $scope.customer = {
+            	name: 'David',
+                street: 'Pune'
+            }
+            $scope.changeData = function () {
+                counter++;
+                $scope.customer = {
+                    name: 'James',
+                    street: counter + ' Cedar Point St.'
+                };
+            };
+        });
+    
+    	isolatedApp.directive('ngIsolatedScope',function(){
+        	return{
+               	
+                scope: {
+                     name:'@',
+                     person: '=',
+                    action: '&'
+                },  
+                //   template: 'Name: {{customer.name }}--street: {{customer.street}}'
+                template:'Name: {{person.name}}<br/>Street: {{person.street}}'
+            }
+        });
+    
